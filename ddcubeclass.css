@@ -1,0 +1,62 @@
+
+.ddcubeclass {
+	font-size: 10px; /* adjust this value to scale the cube up or down */
+	width: 8em; /* cube width. Value redefined inside script */
+	height: 8em; /* cube height. Value redefined inside script */
+	text-align: center;
+	position: relative;
+	margin-right: 5px; /* spacing between cubes */
+	display: inline-block;
+	-moz-perspective: 50em;
+	-webkit-perspective: 50em;
+	perspective: 50em;
+}
+
+.ddcubeclass, .ddcubeclass *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ddcubeclass ul {
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ddcubeclass ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: green; /* default cube side colors */
+	color: white; /* default cube side colors */
+	outline: 1px solid transparent; /* fixed jagged edges in FF */
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	height: 100%;
+	-moz-transition: 0.5s transform;
+	-webkit-transition: 0.5s transform;
+	transition: 0.5s transform; /* transition duration and property. Duration redefined inside script */
+}
+
+.ddcubeclass ul li div{ /* Countdown numbers style */
+	font: bold 4em Arial;
+	padding-top: 3px;
+	
+}
+
+.ddcubeclass ul li span{ /* Countdown units style */
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	font: bold 1.2em Arial;
+}

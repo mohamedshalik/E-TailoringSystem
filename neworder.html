@@ -1,0 +1,48 @@
+<html>
+<body>
+<form name="Registration" action="neworder.php" method="POST" id="content" style="font-family: Comic Sans MS, Times, serif; font-size: 100%; color:black;" autocomplete="on">
+            
+            <table border="0" >
+               
+                <tbody><br>
+                    <tr>
+                        <td ><br><br>Order ID *</td>
+                        <td><br><input type="text" name="orderid"  id="orderid" style="border-color:#BCD2E6; height:25px;font-size:14pt;font-family: Comic Sans MS, Times, serif;" aria-describedby="name-format" required aria-required=”true” /></td>
+                    </tr>
+					 <tr>
+                        <td ><br><br>Status</td>
+                        <td><br><input type="text" name="status"  id="status" style="border-color:#BCD2E6; height:25px;font-size:14pt;font-family: Comic Sans MS, Times, serif;" aria-describedby="name-format" required aria-required=”true” /></td>
+                    </tr>
+                    <tr>
+                        <td ><br><br>Quantity *</td>
+                        <td><br><input type="text" name="quantity"  id="quantity" style="border-color:#BCD2E6; height:25px;font-size:14pt;font-family: Comic Sans MS, Times, serif;" aria-describedby="name-format" required aria-required=”true” /></td>
+                    <td>
+                   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                        <td >Price</td>
+                        <td><input type="text" name="price"  id="price" style="border-color:#BCD2E6; height:30px; width:300px; font-size:14pt;font-family: Comic Sans MS, Times, serif;" required  /></td>
+                   
+					</tr>
+                   
+                    <tr>
+                        <td ><br><br>Mobile *</td>
+                        <td><br><input type="text" name="mobile"  id="mobile" style="border-color:#BCD2E6; height:30px;font-size:14pt;font-family: Comic Sans MS, Times, serif;" required pattern="\d{10}"/></td>
+                   <td>
+                        <td >Date Of Ordering</td>
+                        <td>&nbsp;  &nbsp;<input type="date" name="doo"  id="doo" style="border-color:#BCD2E6; height:30px;width:175px; font-size:14pt;font-family: Comic Sans MS, Times, serif;" required pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="yyyy-mm-dd"/></td>
+						
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        <br>
+              <center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="submit" value="Save" style="border-color:#BCD2E6;font-size:25px; font-family: Comic Sans MS, Times, serif;" >
+
+              </center> 
+             <br>
+			 
+   
+
+        </form>
+</body>
+</html>
